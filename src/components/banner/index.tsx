@@ -10,15 +10,15 @@ import {
   CardContent,
 } from '@/components/ui';
 
-import IMG1 from './image/1.webp'
-import IMG2 from './image/2.png'
-import IMG3 from './image/3.jpg'
-import IMG4 from './image/4.webp'
+import IMG1 from './image/1.webp';
+import IMG2 from './image/2.png';
+import IMG3 from './image/3.jpg';
+import IMG4 from './image/4.webp';
 import Image from 'next/image';
 
-const arrImage = [IMG1 , IMG2 , IMG3 , IMG4]
+const arrImage = [IMG1, IMG2, IMG3, IMG4];
 
- function Banner() {
+function Banner() {
   return (
     <Carousel className="w-full">
       <CarouselContent>
@@ -27,7 +27,12 @@ const arrImage = [IMG1 , IMG2 , IMG3 , IMG4]
             <div className="p-1">
               <Card>
                 <CardContent className="relative aspect-square h-[400px] w-full flex items-center justify-center p-6">
-                  <Image src={image} alt='banner' fill className='object-cover' />
+                  <Image
+                    src={image}
+                    alt="banner"
+                    fill
+                    className="object-cover"
+                  />
                 </CardContent>
               </Card>
             </div>
@@ -40,4 +45,4 @@ const arrImage = [IMG1 , IMG2 , IMG3 , IMG4]
   );
 }
 
-export default Banner
+export default Banner;
